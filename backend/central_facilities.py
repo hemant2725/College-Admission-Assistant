@@ -351,7 +351,7 @@ CENTRAL_LIBRARY = {
         "requirement": "Accessible through HBTU IP range",
         "registration_code": "fCe-9QS-ugn",
         "user_id": "HBTU",
-        "password": "Hbtu@KNP#14jan22"
+        "password as given"
     },
     "services": [
         "Circulation",
@@ -1205,7 +1205,7 @@ def _humanize_key(key: str) -> str:
 
 
 def _redact_sensitive_value(key: str, value):
-    if key.lower() in {"password", "registration_code", "user_id"}:
+    if key.lower() in {"password as given", "registration_code", "user_id"}:
         return "Available through authorized HBTU/library access."
     return value
 
