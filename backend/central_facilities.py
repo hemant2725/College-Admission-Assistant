@@ -346,12 +346,7 @@ CENTRAL_LIBRARY = {
         "mou": "Memorandum of Understanding with Shodhganga of INFLIBNET (UGC body)"
     },
     "j_gate_access": {
-        "url": "https://jgateplus.com/home/",
-        "instructions": "Login -> my J-Gate -> create new account for remote access under J-Gate package",
-        "requirement": "Accessible through HBTU IP range",
-        "registration_code": "fCe-9QS-ugn",
-        "user_id": "HBTU",
-        "password": "Hbtu@KNP#14jan22"
+        "url": "https://jgateplus.com/home/"
     },
     "services": [
         "Circulation",
@@ -1205,7 +1200,7 @@ def _humanize_key(key: str) -> str:
 
 
 def _redact_sensitive_value(key: str, value):
-    if key.lower() in {"password", "registration_code", "user_id"}:
+    if key.lower() in {"registration_code", "user_id"}:
         return "Available through authorized HBTU/library access."
     return value
 
