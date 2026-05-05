@@ -351,7 +351,7 @@ CENTRAL_LIBRARY = {
         "requirement": "Accessible through HBTU IP range",
         "registration_code": "fCe-9QS-ugn",
         "user_id": "HBTU",
-        "password: "given by librarian",
+        "password": "given by librarian"
     },
     "services": [
         "Circulation",
